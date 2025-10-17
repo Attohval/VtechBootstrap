@@ -1,0 +1,61 @@
+
+
+/* Custom CSS for Project Cards */
+  .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-img img {
+    transition: transform 0.4s ease;
+  }
+
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .project-card:hover .project-overlay {
+    opacity: 1;
+  }
+
+  .project-overlay a {
+    border-radius: 50px;
+    padding: 8px 20px;
+  }
+
+
+  /* contact form styles */
+  #contact .form-control:focus {
+    border: 1px solid #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+
+  #contact i {
+    transition: transform 0.3s ease;
+  }
+
+  #contact li:hover i {
+    transform: scale(1.1);
+  }
+
+  #contact form {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #contact form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+  }
